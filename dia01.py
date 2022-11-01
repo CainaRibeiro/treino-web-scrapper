@@ -21,4 +21,3 @@ print(bs)
 #Para tabalhar com erros, é necessário importar o HTMLError
 
 from urllib.error import HTTPError
-
