@@ -13,7 +13,12 @@ from urllib.request import urlopen
 
 from bs4 import BeautifulSoup
 
-html = urlopen('https://guilhermemuller.com.br/ead/html-css-na-pratica/pagina-html-basica')
+html = urlopen('https://siseducsaquarema.org.br/')
 bs = BeautifulSoup(html.read(), 'html.parser')
 
-print(bs.header)
+print(bs)
+
+#Para tabalhar com erros, é necessário importar o HTMLError
+
+from urllib.error import HTTPError
+
