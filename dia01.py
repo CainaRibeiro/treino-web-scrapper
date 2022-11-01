@@ -11,3 +11,9 @@ from urllib.request import urlopen
 
 #from bs4 import BeautifulSoup em um terminal python
 
+from bs4 import BeautifulSoup
+
+html = urlopen('https://guilhermemuller.com.br/ead/html-css-na-pratica/pagina-html-basica')
+bs = BeautifulSoup(html.read(), 'html.parser')
+
+print(bs.header)
